@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    background-image: url(../images/bg-pattern-top-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top -60px left 15px;
+}
+
+/* html {
+    background-image: url(../images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top 800px left 50px;
+} */
+
+/* ****MOBILE**** */
+
+.container {
+    width: 400px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.info h1 {
+    color:hsl(300, 43%, 22%);
+    text-align: center;
+    margin: 50px 70px 20px 70px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.info p {
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 60px 30px 60px; 
+}
+
+.reviews {
+    width: 290px;
+    height: 65px;
+    background-color: hsl(300, 24%, 96%);
+    color:hsl(300, 43%, 22%);
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    margin: 15px auto;
+    border: none;
+}
+
+.buyers {
+    margin: 40px 0 100px 0;
+
+}
+
+.review {
+    width:  290px;
+    height: 225px;
+    background-color:hsl(300, 43%, 22%);
+    margin: 20px auto;
+    border-radius: 10px; 
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    text-align: start;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 30px 5px 20px 20px;
+}
+
+.profile {
+    font-size: 14px;
+    margin: 35px 0 0 10px;
+    line-height: 18px;
+}
+
+.profile h3 {
+    color: white;
+    font-weight: 400;
+}
+
+.profile p {
+    color: hsl(333, 80%, 67%);
+}
+
+.content {
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    margin: 5px 30px;
+    line-height: 18px;
+}
+
+@media screen  and (min-width : 600px){
+    
+    body {
+        background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 580px 380px, 1200px 720px;
+        background-position: top left, bottom right;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 1200px;
+        height: 100%;
+        margin: 100px;
+    }
+
+    .top-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .info {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info h1 {
+        color:hsl(300, 43%, 22%);
+        text-align:start;
+        margin: 50px 120px 20px 70px;
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    .info p {
+        text-align: start;
+        margin-left: 68px;
+    }
+
+    .star-reviews {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .buyers {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .reviews {
+        width: 400px; 
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5px;
+    }
+
+    .stars1, .stars2, .stars3 {
+        width: 150px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .stars2 {
+        padding-left: 9px;
+    }
+
+    .rating1 {
+        margin-right: 200px;
+    }
+
+    .rating2 {
+        margin-right: 160px;
+    }
+
+    .rating3 {
+        margin-right: 120px;
+    }
+
+    .review {
+        width: 320px;
+    }
+
+    .review1 {
+        margin-left: 60px;
+    }
+
+    .review2 {
+        margin-top: 40px;
+        margin-left: -70px;
+    }
+
+    .review3 {
+        margin-top: 60px; 
+        margin-left: -70px
+    }
+
+    .header {
+        margin: 10px 0 0 15px;
+    }
+}
+
+
+
